@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" enctype="multipart/form-data" method="GET">
+        <span>
+        用户名：<input type="text" name="uesName" size="20" maxlength="10" placeholder="请输入你的姓名"></span><br>
+        密&nbsp;&nbsp;码：<input type="password" size="20" maxlength="10" placeholder="请输入你的密码"><br>
+        
+            <hr>
+
+        <label for="uName">用户名：</label>
+        <input type="text" id="uName" name="usename" size="20" maxlength="10" placeholder="请输入你的姓名"><br>
+        
+        <label for="passwd">密 &nbsp;&nbsp;码：</label>
+        <input type="password" id="passwd" name="pwd" size="20" maxlength="10" placeholder="请输入你的密码"><br>
+            <br>
+            <br>
+
+            <label for="photoId">大头照</label>
+            <input type="file" name="photo" id="photoId" accept=".jpg,.jpeg,.png" multiple>
+            <br>
+            <label for="">性别：</label>
+            <input type="radio" name="sex" id="man" value="man" checked="checked">男
+            <input type="radio" name="sex" id="woman" value="woman">女
+            <input type="radio" name="sex" id="zhong" value="zhong">其他
+
+            <br>
+            <label for="">爱好:</label>
+            <input type="checkbox" name="hobby" id="basketball" value="basketball">篮球
+            <input type="checkbox" name="hobby" id="football" value="football">足球
+            <input type="checkbox" name="hobby" id="rap" value="rap" checked="checked">rap
+            <input type="checkbox" name="hobby" id="dance" value="dance">跳舞
+            <br>
+
+            <input type="reset" name="reset" value="重置"><br>
+
+            <input type="button" name="button" value="普通按钮"><br>
+
+            <input type="submit" name="submit" value="提交"><br>
+
+            <input type="hidden" name="number" value="007"><br>
+
+            <span>简介：</span><br>
+            <textarea name="jianjie" cols="80" rows="5" placeholder="请输入您的简介..."></textarea>
+            <br>
+
+            <span>省份</span>
+            <select name="province">
+                <option>请选择你的省份</option>
+                <option value="hunan">湖南</option>
+                <option value="hubei">湖北</option>
+                <option value="guangxi">广西</option>
+                <option value="guangdong">广东</option>
+
+            </select>
+
+
+    </form>
+
+</body>
+</html>
