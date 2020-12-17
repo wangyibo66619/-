@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <script>
+            function checkAge(){
+                //获取年龄
+            var ageLine = document.getElementById("age");
+
+            var age = parseInt(ageLine.value);
+            //判断年龄
+            /*
+            ageLine = <input type="text" id="age"/> 
+            ageLine.value = 18 (String)
+            parseInt(ageLine.value) = 18 (int)
+            */
+           
+        /*  if(age < 18){
+                alert("给爷爬");
+            }else{
+                alert("欢迎来上网");
+            } */
+
+          /*  if(age < 18 && age > 6){
+                alert("一边玩去")
+            }else if(age >= 18 && age <= 30){
+                alert("来玩lol")
+            }else if(age >= 31 && age <= 50){
+                alert("是兄弟就来砍我")
+            }else if(age >=51 && age <=60){
+                alert("你大爷还是你大爷")
+            }else{
+                alert("您还是会去歇歇吧")
+            } */
+
+           /* if(age <18 ){
+                document.write("少年")
+            }else if(age >=19 && age<= 35){
+                document.write("中年")
+            }else if(age >=36 && age <=60){
+                document.write("中年")
+            }else{
+                document.write("老年")
+            } */
+
+            //获取十位数字
+            var ageRank = parseInt(age /10); // 将 number类型的结果转换为int类型
+            switch(ageRank){
+                case 0:
+                    document.write("...");
+                    break;
+                case 1:
+                    document.write("你是十几岁的人");
+                    break;//中断当前的结构，后面的没必要执行了
+                case 2:
+                    document.write("你是二十几岁的人");
+                    break;
+                case 3:
+                    document.write("你是三十几岁的人");
+                    break;
+                case 4:
+                    document.write("你是四十几岁的人");
+                    break;
+                case 5:
+                    document.write("你是五十几岁的人");
+                    break;
+                case 6:
+                    document.write("你是六十几岁的人");
+                    break;
+                default: //默认的情况，如果上面条件都不符合，全部进入到这里来
+                    document.write("亲，这边建议您重开呢")
+                    break; //最后一个break可写可不写，因为结构已经结束，无需在中断
+            }
+        }
+        </script>
+    </head>
+
+
+    <body>
+        <p>
+            检查你是否可以上网
+        </p>
+        <label>请输入您的年龄：</label>
+        <input type="text" id="age"/>
+        <button onclick="checkAge()">成年了吗?</button>
+
+    </body>
+</html>
