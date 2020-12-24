@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col{
+           width: 150px;
+           height: 50px;
+           border: 1px solid black; 
+           margin-right: 2px;
+           line-height: 50px;
+        }
+    </style>
+
+    
+</head>
+<body>
+    
+    <script>
+        /* for(i = 0;i < 10;i++){      //控制显示的行数
+            for(var j =0;j < i;j++){ //每一行显示多少个
+                document.write("*")
+            }
+            document.write("<br/>")
+        }
+
+
+
+
+        for(let i =10;i > 0;i--){
+            for(let j =0;j<i;j++){
+                document.write("*")
+            }
+            document.write("<br/>")
+        } */
+
+
+       /*  for(let i = 1;i <= 9;i++){
+            for(let j =1;j <= i;j++){
+                document.write(i + "*" + j + "=" +(i*j) )
+                document.write("&nbsp;&nbsp;&nbsp;&nbsp;")
+            }
+            document.write("<br/>")
+        } */
+
+        for(var i = 0; i <= 9; i++){
+            // 外层循环控制行数，外层循环执行一次，内层循环全部执行
+            for(var j = 1; j <= i; j++){
+                // 内层循环控制打印的公式
+                // 第一行一个式子，第二行两个， 第n行n个（直到9）所以j <= i
+                document.write(j + " X " + i + " = " + i*j +"&nbsp;&nbsp;&nbsp;");   
+            }
+            document.write("<br>");
+            // 内部循环执行一次，一行完成，打印一个换行
+        } 
+    </script>
+
+
+
+</body>
+</html>
