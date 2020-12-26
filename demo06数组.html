@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <script>
+        let array01 = new Array(); //只创建，但是没有初始值
+
+        let array02 = new Array(1,2,3,4,5,6,7,8,9);//创建了一个数组，并且给定初始值
+
+        let array03 = new Array("王艺博" , 18 , true , null);//创建一个数组
+
+        /* 
+            字面量
+        */
+
+
+        let array04 = [];    //创建一个简单数组，只创建，不给定初始值
+        let array05 = [1,2,3,4,5,6,7,8,9];  //字面量创建数组，并给定初始值
+        let array06 = ["王艺博" , 18 , true , null] //初始值类型不同
+
+        /* //查看数组
+        document.write(array05)
+        document.write(array06)
+
+        document.write(array05.length)
+        document.write(array06.length)
+
+
+
+        document.write(typeof(array05)) //object  对象类型
+        document.write(typeof(array06)) //object  对象类型
+         */
+        //数组遍历
+        for(let i = 0;i < array05.length;i++){
+            console.log("array05 ["+ i +" ]="+ array05[i])
+
+        }
+        console.log("最后一个元素" + array05[array05.length-1]);//最后一个元素
+        console.log("最后一个元素" + array05[array05.length]);//越界 underfined
+
+
+        for(i in array02){
+            console.log(i)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
