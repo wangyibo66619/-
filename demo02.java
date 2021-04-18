@@ -11,7 +11,6 @@ public class demo02 {
         int mysql = 89;
         int html = 95;
         System.out.println("java:" + java + "mysql:" + mysql + "html:" + html);
-
         String name = "小王";
         String play = "玩耍";
         System.out.println(name.concat(play));
