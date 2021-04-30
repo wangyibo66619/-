@@ -1,0 +1,74 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+
+    <script>
+        /*
+        function Fun01(){
+            console.log("hello word1");
+        }
+
+        function Fun02(){
+            console.log("hello word2");
+        }
+
+        function Fun03(){
+            console.log("hello word3");
+        }
+
+        function Fun04(){
+            console.log("hello word4");
+        }
+
+        function Fun05(){
+            console.log("hello word5");
+        }
+
+        function Fun06(){
+            console.log("hello word6");
+        }
+
+
+        function FunMix(){
+            Fun01();
+            Fun02();
+            Fun03();
+            Fun04();
+            Fun05();
+            Fun06();
+
+        }
+        FunMix();*/
+
+
+        function Fun01(){
+            console.log("fun01被调用了");//2
+            Fun02();
+            console.log("fun01结束了");//6
+
+        }
+
+        function Fun02(){
+            console.log("fun02被调用了");//3
+            Fun03();
+            console.log("fun02结束了");//5
+        }
+
+        function Fun03(){
+            console.log("fun03被调用了");//4
+        }
+
+        function FunMix(){
+            console.log("FunMix开始了");//1
+            Fun01();
+            console.log("funmix结束了");//7
+        }
+        
+        FunMix();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

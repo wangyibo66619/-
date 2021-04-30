@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <script>
+        /* 
+            function Fun01(){
+                var local_value = "本地变量";
+                
+                return local_value;  //直接返回局部变量，导致破坏了局部的属性，进而引发内存泄漏
+            }
+
+            let reslut = Fun01();
+            console.log(result);
+        */
+
+        function Fun01(){
+            var local_value = "本地变量";
+            function close(){       //将本地变量传出Fun01之外，但不破坏其局部变量属性
+                return local_value;
+            }
+            return close();//直接将函数返回，将达到保护局部变量范围的作用
+        }
+        var reslut = Fun01();
+        console.log(reslut);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

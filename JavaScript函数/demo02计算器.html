@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+       
+        
+        function getSum(){
+            var inputShu01 = document.getElementById("shu01");
+            var inputShu02 = document.getElementById("shu02");
+            var inputShu01Value = parseInt(inputShu01.value);//将string转换为int，可以进行计算+-
+            var inputShu02Value = parseInt(inputShu02.value);
+            var he = inputShu02Value + inputShu01Value;
+            //获取展示结果的框
+            var showSum = document.getElementById("sum");
+            showSum.value = he;
+        }
+    </script>
+
+
+
+</head>
+<body>
+
+        <p>我是一个没有感情的计算器</p>
+        <input type="text" id="shu01">
+        <span>+</span>
+        <input type="text" id="shu02">
+        <span>=</span>
+        <input type="text" id="sum">
+        <button onclick="getSum()">计算</button>
+        
+</body>
+</html>

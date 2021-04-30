@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+
+        /* 
+            局部变量
+        */
+
+        /* function Fun01(){
+            var name = "段誉";//变量，写在函数内部，作用范围就在函数内部，超出无法使用
+            console.log(name);//段誉
+
+        }
+        Fun01();
+        console.log(name);//空白 超出范围，无法打印 */
+
+
+
+       /*  var name = "段正淳";  //在当前html中任何位置都可以访问
+        function Fun02(){
+            console.log(name);
+        }
+        Fun02();//调用函数
+        console.log(name); */
+
+
+        /* 
+            全局变量和局部变量都有的时候，
+            局部变量范围更小，越精确，优先级越高，优先使用
+        */
+
+/* 
+        var name = "段正淳";  //在当前html中任何位置都可以访问
+        function Fun02(){
+            var name = "段誉";
+            console.log(name);//段誉
+        }
+        Fun02();//调用函数
+        console.log(name);//段正淳
+ */
+
+
+        /* 
+            块作用域
+        */
+
+
+        {
+            var global_value = "块中的全局值";  //var 定义的是全局的
+            let local_value = "块中的局部变量";//let  定义的是局部的
+            const const_value = "块中的常量"; //consst 常量 
+
+             
+            console.log("代码块中的输出："+global_value);
+            console.log("代码块中的输出："+local_value);
+            console.log("代码块中的输出："+const_value);
+
+            
+
+        }
+        console.log(global_value);
+        console.log(local_value);// let 作用范围是局部，超出代码块，无法使用
+        console.log(const_value);//常量  超出局部范围，无法使用
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
