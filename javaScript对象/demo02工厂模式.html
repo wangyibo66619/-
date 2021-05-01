@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <script>
+        /* 
+            工厂的方式批量创建多个对象
+        */
+
+        function cat(name,age,func){
+            var obj = {
+                nName : name,
+                nAge : age,
+                nSay : func
+            };
+            return obj;
+        }
+
+        var cat01 = cat("加菲猫",1,function(){
+            console.log("加菲猫很胖");
+        })
+
+        var cat02 = cat("机器猫",2,function(){
+            console.log("我是机器猫");
+        })
+
+        var cat03 = cat("橘猫",3,function(){
+            console.log("我很重");
+        })
+
+        console.log(cat01);
+        console.log(cat03);
+        console.log(cat03);
+
+        cat01.nSay();
+        cat02.nSay();
+        cat03.nSay();
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>
