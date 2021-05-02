@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    <button onclick="Fun01()" id="btn">dsadsa</button>
+</body>
+
+
+
+<script>
+
+    /* //0级事件
+    function Fun01(){
+        console.log("ssss")
+    } */
+
+
+    //0级事件
+    var btn = document.getElementById("btn");
+    btn.onclick = function(){
+        console.log("sbls");
+    }
+
+    //2级事件
+    var btn = document.getElementById("btn");
+    btn.addEventListener("click",function(){
+        console.log("wdnmd");
+    },false)
+</script>
+</html>
