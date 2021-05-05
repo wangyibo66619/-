@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+    
+</body>
+
+<script>
+    document.cookie = "name=tom";
+    document.cookie = "age=18";
+    var date = new Date(new Date().getTime() + 10 * 60 * 1000);
+    document.cookie = "year=2020;expires="  + date.toDateString();
+
+    //解析
+
+    var get_cookie = document.cookie;
+    console.log(get_cookie);
+
+    function jixi(chaxun){
+        var arr , reg = new RegExp("(^| )" + name + "=([^;])*(;|$)");
+        if(arr = document.cookie.match(reg) ){
+            return (arr[2]);
+        }else{
+            return null;
+
+        }
+    }
+
+    var result = jixi("name");
+    console.log(result); 
+    
+</script>
+</html>

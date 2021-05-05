@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    
+
+    <body>
+        
+
+    </body>
+
+    <script>
+        document.cookie = "name=啊啊啊";
+        var get_cookie = document.cookie;
+        console.log(get_cookie);
+
+
+        var date = new Date(new Date().getTime() + 30 * 60 * 1000 );
+        document.cookie = "name=aaa;exporse" + date.toGMTString();
+
+    </script>
+</html>
