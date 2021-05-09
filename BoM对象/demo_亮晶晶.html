@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            #container{
+                width: 400px;
+                height: 400px;
+                border: 1px solid black;
+                position: relative;
+                background-color: black;
+            }
+            span{
+                color: yellow;
+                position: absolute;
+                font-size: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="container">
+            <!-- <span>*</span> -->
+        </div>
+        <button id="star_flash" onclick="startFlash()">
+            亮晶晶
+        </button>
+        <button onclick="stop()">
+        停下
+        </button>
+    </body>
+    <script>
+        var timer = ""
+        function startFlash(){
+            timer = setInterval(() => {  //箭头函数  lambad表达式
+                document.getElementById("container").innerHTML = "<span> * <span/>";
+               let x = parseInt(Math.random() * 400 + 1);
+               let y = parseInt(Math.random() * 400 + 1);
+               document.getElementById("container").firstElementChild.style.left = x + "px";
+               document.getElementById("container").firstElementChild.style.top = y + "px";
+            }, 100);
+            
+        }
+
+        function stop(){
+            clearInterval(timer);
+        }
+    </script>
+</html>

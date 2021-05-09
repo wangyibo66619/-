@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="goBack()">返回上一级</button>
+        <button onclick="goBack02()">返回上二级</button>
+
+    </body>
+
+    <script>
+        function goBcak(){
+            history.back();//回到上一个页面
+        }
+
+        function goBcak02(){
+            history.go(-2);  //回到上一个访问的页面 -1 -2
+        }
+    </script>
+</html>
